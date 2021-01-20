@@ -4,16 +4,17 @@ const author = quote.querySelector("#author");
 
 const QUOTE_NUM = 1643;
 
-function getQuotes() {
-  fetch(`https://quotes.rest/qod?language=en`)
-    //https://api.paperquotes.com/apiv1/quotes/?lang=fr
+function getrandomQutoes(response) {
+  fetch("https://type.fit/api/quotes")
     .then(function (response) {
       return response.json();
     })
     .then(function (data) {
+      let num = Math.floor(Math.random() * QUOTE_NUM);
+      let qu = data[num].text;
+      let au = data[num].author;
       console.log(data);
-      let qu = data.contents.quotes[0].quote;
-      let au = data.contents.quotes[0].author;
+      console.log(num);
       console.log(qu);
       console.log(au);
       quote_text.innerText = `${qu}`;
@@ -22,7 +23,7 @@ function getQuotes() {
 }
 
 function init() {
-  getQuotes();
+  getrandomQutoes();
 }
 
 init();
