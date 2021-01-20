@@ -14,6 +14,7 @@ function deleteToDo(event) {
   const cleanToDos = toDos.filter(function (toDo) {
     return toDo.id !== parseInt(li.id);
   });
+  toDos = cleanToDos;
   saveToDos();
 }
 function saveToDos() {
@@ -25,7 +26,7 @@ function paintToDo(text) {
   const delBtn = document.createElement("button");
   const span = document.createElement("span");
   const newId = idNumbers++;
-  delBtn.innerHTML = "🤔";
+  delBtn.innerHTML = "❌";
   delBtn.addEventListener("mousedown", deleteToDo);
   span.innerText = text;
   li.appendChild(delBtn);
