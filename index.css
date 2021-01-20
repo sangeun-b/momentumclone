@@ -83,6 +83,11 @@ ul {
   right: 10px;
   text-shadow: 1px 1px grey;
 }
+.qu {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
 #quote {
   color: whitesmoke;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
