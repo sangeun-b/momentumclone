@@ -34,6 +34,7 @@ body {
   border: 0;
   border-bottom: 2px solid whitesmoke;
   color: whitesmoke;
+  text-align: center;
 }
 .greetings {
   text-align: center;
@@ -62,6 +63,7 @@ body {
   border: 0;
   border-bottom: 2px solid whitesmoke;
   color: whitesmoke;
+  text-align: center;
 }
 ul {
   padding-left: 18cm;
@@ -71,10 +73,15 @@ ul {
 .weather {
   color: whitesmoke;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  float: right;
+  /* float: right;
   margin-top: 20px;
-  margin-right: 8px;
+  margin-right: 8px; */
+  /* vertical-align: text-bottom; */
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
+
 .clicked {
   color: #7f8c8d;
 }
