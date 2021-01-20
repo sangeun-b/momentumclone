@@ -16,10 +16,10 @@ function patingImg() {
   body.prepend(image);
 }
 
-function genRandom() {
-  const number = Math.floor(Math.random() * IMG_NUM);
-  return number;
-}
+// function genRandom() {
+//   const number = Math.floor(Math.random() * IMG_NUM);
+//   return number;
+// }
 function init() {
   // const randomNumber = genRandom();
   // paintImg(randomNumber);
