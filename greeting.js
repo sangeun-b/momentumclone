@@ -20,7 +20,7 @@ function handleSubmit(event) {
   const currentValue = input.value;
   paintGreeting(currentValue);
   //localStorage.setItem(USER_LS, currentValue);
-  saveNaem(currentValue);
+  saveName(currentValue);
 }
 function askForName() {
   form.classList.add(SHOWING_CN);
