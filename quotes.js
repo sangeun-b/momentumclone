@@ -13,10 +13,6 @@ function getrandomQutoes(response) {
       let num = Math.floor(Math.random() * QUOTE_NUM);
       let qu = data[num].text;
       let au = data[num].author;
-      console.log(data);
-      console.log(num);
-      console.log(qu);
-      console.log(au);
       quote_text.innerText = `${qu}`;
       author.innerText = `- ${au} -`;
     });
