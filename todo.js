@@ -28,7 +28,7 @@ function paintToDo(text) {
   const newId = idNumbers++;
   delBtn.innerHTML = "❌";
   delBtn.addEventListener("mousedown", deleteToDo);
-  span.innerText = text;
+  span.innerText = "  " + text;
   li.appendChild(delBtn);
   li.appendChild(span);
   li.id = newId;
