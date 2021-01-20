@@ -1,5 +1,5 @@
 const quote = document.querySelector(".jsQuote");
-const quote_text = quote.querySelector("#quote");
+const q_text = quote.querySelector("#quote");
 const author = quote.querySelector("#author");
 
 const QUOTE_NUM = 1643;
@@ -13,7 +13,7 @@ function getrandomQutoes(response) {
       let num = Math.floor(Math.random() * QUOTE_NUM);
       let qu = data[num].text;
       let au = data[num].author;
-      quote_text.innerText = `${qu}`;
+      q_text.innerText = `${qu}`;
       author.innerText = `- ${au} -`;
     });
 }
